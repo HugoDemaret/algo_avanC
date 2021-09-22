@@ -8,19 +8,17 @@
 \date{September 2021}
 \begin{document}
 \maketitle
-\section*{Exercice A}
-\section*{Exercice B}
+\section*{Partie A -}
+\section*{Partie B -}
 Voir sur :\\
 https://github.com/HugoDemaret/linked\_list\\
 https://github.com/HugoDemaret/doublelinked\_list\\
 https://github.com/HugoDemaret/binary\_tree\\
 
-\section*{Exercice C}
-\subsection*{1 -}
-\begin{algorithmic}
-\State $i \gets 10$
-\end{algorithmic}
-\subsection*{2 -}
+\section*{Partie C -}
+\subsection*{Exercice 1 -}
+\textbf{Déterminons quelle est la complexité asymptotique de cet algorithme.}\\\\
+\subsection*{Exercice 2 -}
 \textit{Soit T un graphe avec n sommets. Démontrer que les propriétés suivantes sont équivalentes.}\\\\
 \textbf{(1) T est un arbre}\\
 \textit{La définition d'un arbre est : Graphe acyclique et connexe.}\\\\
@@ -31,6 +29,25 @@ https://github.com/HugoDemaret/binary\_tree\\
 \textbf{(4) T est un graphe acyclique avec n-1 arrête}\\
 \textit{T est un graphe simple. Un graphe acyclique est un graphe simple (la boucle serait un cycle). Le graphe possède n-1 arrêtes, donc chaque sommet possède au moins une arrête (parfois en commun avec un autre sommet). Donc le graphe est connexe. C'est donc un arbre.}\\\\
 \textit{Les propriétés précédentes décrivant toutes un arbre, elles sont équivalentes.}\\\\
+\subsection*{Exercice 3 -}
+\textit{Considérons 3 définitions d'un arbre : }\\\\\\
+
+\textit{Définition 1.}\\
+\textsf{Un arbre T est un graphe :}\\
+\textsf{• Qui est simple (sans boucle)}\\
+\textsf{• Tel que : }\\
+\begin{equation}
+\forall (u,v) \in T, u \neq v, \exists! \eta[u,v]
+\end{equation}\\
+\textsf{Cette définition repose sur les deux propositions suivantes :}\\
+\textit{Proposition 1 : S'il y a un chemin de v à w dans le graphe G, alors il y a aussi un chemin simple de v à w.}\\
+\textit{Proposition 2 : S'il y a un cycle dans G, alors il y a un cycle simple dans G.}\\\\\\
+
+\textit{Définition 2.}\\
+\textsf{Un graphe non-orienté connexe et acyclique est appelé un arbre.}\\\\\\
+
+\textit{Définition 3.}\\
+\textsf{Un arbre est un graphe connexe minimal. C'est-à-dire que toute suppression d'arrêtes le rend non connexe.}\\\\\\
 
 
 
