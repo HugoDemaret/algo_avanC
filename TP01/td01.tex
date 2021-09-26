@@ -3,6 +3,7 @@
 \usepackage{algpseudocode}
 \usepackage{algorithm}
 \usepackage{tikz}
+\usepackage{amsmath}
 \usetikzlibrary{automata}
 
 \title{Algorithmique Avancée TD01}
@@ -54,6 +55,7 @@ Voir sur :\\
 \section*{Partie D -}
 \subsection*{Exercice 1.1 -}
 \textit{Soit G le graphe suivant :}\\\\\\
+\begin{center}
 	\begin{tikzpicture}
 	\node[circle,draw=black] (v1) at (0,0) {1};
 	\node[circle,draw=black] (v2) at (2,1) {2};
@@ -76,15 +78,87 @@ Voir sur :\\
 	\draw[](v4)--(v5);
 	\draw[](v5)--(v1);
 	\draw[](v3)--(v6);
-	\draw[](v6)--(v4)
+	\draw[](v6)--(v4);
 	\end{tikzpicture}
+\end{center}
+	\textit{Matrice d'adjacence de G :}\\
+	\begin{center}
+	$
+	A =
+	\left[\begin{matrix}
+		0&1&0&0&1&0\\
+		1&0&1&1&0&0\\
+		0&1&0&1&0&1\\
+		0&1&1&0&1&1\\
+		1&0&0&1&0&0\\
+		0&0&1&1&0&0
+	\end{matrix}\right]
+	$
+	\end{center}
+	\textit{Codage en liste d'arrêtes et sommets :}
+	\begin{table}[h]
+		\begin{center}
+		\begin{tabular}{|c | c | c | p{5cm}}
+		\hline
+		Sommet & arrêtes & sommets\\
+		\hline \hline
+		1&a,b&2,5\\
+		2&a,c,e&1,3,4\\
+		3&e,f,h&2,4,6\\
+		4&c,d,g,h&2,3,5,6\\
+		5&b,d&1,4\\
+		6&f,g&3,4\\
+		\hline
+		\end{tabular}
+		\end{center}
+	\end{table}
 \subsection*{Exercice 1.2 -}
 \textit{On considère G un graphe simple et non dirigé.}\\\\
 \textbf{1 -}
 \textit{Soit A la matrice d'adjacence de G. Que valent les sommes par lignes et par colonnes ?}\\\\
 \textsf{Les sommes par lignes et par colonnes nous donnent le degré des sommets de G.}\\\\
 \textbf{2 -}
-\textit{Soit M la matrice d’incidence de G, c’est-à-dire une matrice de taille V(G) × E(G) telle que m_{ue} = 1 si l’arrête e est incidente au sommet u et m_{ue} = 0 sinon. Ecrire la matrice d’incidence du graphe de l’exercice précédent.}
-
-
+\textit{Soit M la matrice d’incidence de G, c’est-à-dire une matrice de taille $\big|V(G)\big| \cdot \big|E(G)\big|$ telle que $m_{ue} = 1$ si l’arrête e est incidente au sommet u et $m_{ue} = 0$ sinon. Ecrire la matrice d’incidence du graphe de l’exercice précédent.}\\\\
+\textit{Matrice d'incidence de G :}\\\\
+\begin{center}
+	$
+	M =
+	\left[\begin{matrix}
+	1&1&0&0&0&0&0&0\\
+	1&0&1&0&1&0&0&0\\
+	0&0&0&0&1&1&0&1\\
+	0&0&1&1&0&0&1&1\\
+	0&1&0&1&0&0&0&0\\
+	0&0&0&0&0&1&1&0
+	\end{matrix}\right]
+	$
+\end{center}
+\textbf{3 -}
+\textit{Que valent les sommes des coefficients par lignes et par colonnes de M ?}\\\\
+\textsf{La somme des coefficients par ligne de M nous donne le degré des sommets.}\\
+\textsf{La somme des coefficients par colonne de M nous dit si le graphe est simple ou connexe.}\\\\
+\textit{Somme par lignes :}\\\\
+\begin{center}
+$\sum_{}\big|M_{i}\big|$\\
+\end{center}
+\textit{Nous donne le degré du sommet i.}\\\\
+\begin{center}
+$max(\sum_{}\big|M_{i}\big|)$\\
+\end{center}
+\textit{Nous donne l'ordre du graphe.}\\\\\\
+\textit{Somme par colonnes :}\\\\
+\begin{center}
+$\sum_{}\big|M_{j}\big| = \Bigg\{  \textit{si 1 : boucle (non-simple) (pas d'information sur la connexité)}
+\sum_{}\big|M_{j}\big| = \Bigg\{  
+\textit{si 2 : arrête simple et connexe} \big. $
+\end{center}
+\textit{Nous dit si le sommet est simple, et s'il est connecté au reste du graphe.}\\\\
+\textit{Min() somme par colonnes :}\\\\
+\begin{center}
+$\textit{min}(\sum_{}\big|M_{j}\big|) = \Bigg\{  \textit{si 1 : graphe non-simple} 
+\linebreak
+\textit{min}(\sum_{}\big|M_{j}\big|) = \Bigg\{  
+\textit{si 2 : graphe simple et connexe} \big. $
+\end{center}
+\textit{Nous dit si le graphe est simple et connexe, ou s'il contient une boucle.}\\\\
 \end{document}
