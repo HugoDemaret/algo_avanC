@@ -12,6 +12,25 @@
 \begin{document}
 \maketitle
 \section*{Partie A -}
+\subsection*{Exercice 1 -}
+\textit{Représentons le problème sous forme de graphe :}
+	\begin{center}
+		\begin{tikzpicture}
+			\node[circle,draw=black] (A) at (0,0) {A};
+			\node[circle,draw=black] (B) at (3,0) {B};
+			\node[circle,draw=black] (C) at (4.5,-2.5) {C};
+			\node[circle,draw=black] (D) at (1.5,-4.5) {D};
+			\node[circle,draw=black] (E) at (-1.5,-2.5) {E};
+			\draw[](A)--(B)--(C)--(D)--(E)--(A)--(C)--(E)--(B)--(D)--(A);
+		\end{tikzpicture}
+	\end{center}
+	\textit{Notons l'arrête reliant deux sommets i,j "$(i;j)$". Remarquons que $(i;j) = (j;i)$.}\\
+	\linebreak
+	\textsf{Comptons le nombre de paires grâce à la formule $\frac{n(n+1)}{2} $, avec $n = card(\{A,B,C,D,E\}) -1 = 4 $ car on ne forme pas de paire $(i;i)$}
+	\linebreak
+	\textsf{Cela donne $ 10$ paires}
+	\textsf{Donc le nombre total (minimal) de personnes est 10, à répartir entre chaque groupe équitablement.}\\
+	\textsf{Le nombre de personnes par groupe est donc 2.}
 \section*{Partie B -}
 Voir sur :\\
 	https://github.com/HugoDemaret/linked\_list\\
