@@ -4,6 +4,7 @@
 \usepackage{algorithm}
 \usepackage{tikz}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usetikzlibrary{automata}
 \setcounter{MaxMatrixCols}{25}
 
@@ -103,6 +104,42 @@
 	\end{matrix}\right]
 	$
 	\end{center}
+	\textsf{L'algorithme de Welsh-Powell ne nous donne pas le nombre chromatique : il nous donne 5, alors que le graphe est 4-coloriable.}\\\\
+\subsection*{Exercice 3 -}
+\textit{Graphe représentant le Sudoku (Par Eyal)}
+\begin{center}
+	\begin{tikzpicture}
+		\newcounter{n}
+		\setcounter{n}{0}
+		\foreach \i in {0,1,...,8}{
+			\foreach \j in {0,1,...,8}{
+				\ifthenelse{\value{n}<10}{
+					\node[draw, circle, draw=black] (\then) at (\i, \j) {0\then};
+				}
+				{
+					\node[draw, circle, draw=black] (\then) at (\i, \j) {\then};
+				}
+				\addtocounter{n}{1}
+			}
+			\foreach \k in {1,2,...,8}{
+				\draw[-, >=latex] (0,0) to[bend left = 45] (0,\k);
+				\draw[-, >=latex] (0,0) to[bend right = 45] (\k,0);
+			} 
+			\draw (0,0)--(1,1);
+			\draw (0,0)--(1,2);
+			\draw (0,0)--(2,1);
+			\draw (0,0)--(2,2);
+		}
+	\end{tikzpicture}
+\end{center}
+\textsf{On représente toutes les cases du sudoku, de 1 (00) à 81 (80)}
+\textsf{On relie entre elles les cases incompatibles : une case x dans (i ; j) ne peut avoir la même valeur qu'une case y dans (i ; j), et ne peut pas être dans le même carré.}
+\textsf{Ainsi, on relie (00) à:}
+\begin{center}
+	$
+		\forall \alpha \in \{\{\beta \equiv 0 [9] : \beta \in [1,80] \}\cup \{\beta \in [1,8]\} \cup \{\beta \in \{11,19,20\}]\}\}
+	$
+\end{center}
 \section*{Partie B -}
 Voir sur :\\
 	https://github.com/HugoDemaret/linked\_list\\
