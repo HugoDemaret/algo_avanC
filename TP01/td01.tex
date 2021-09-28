@@ -36,7 +36,7 @@
 \subsection*{Exercice 2 -}
 \textit{Représentons ce problème sous forme de graphe. La question que l'on se pose est "Ce graphe est-t-il k-coloriable, pour quelle valeur de k ?"}\\\\
 \linebreak
-\textsf{Les sommets représenterons les pays, et la relation entre deux sommet (lien) est une frontière commune.}
+\textsf{Les sommets représenterons les pays, et la relation entre deux sommets (lien) est une frontière commune.}
 \textsf{On peut en vérité déjà savoir que le graphe sera 4-coloriable. En effet, tout graphe planaire (pouvant se représenter sur un plan sans que les arêtes ne se croisent), est 4-coloriable d'après le théorème des 4 couleurs.}\\
 \linebreak
 \textit{Voici un tracé possible de ce graphe :}
@@ -63,8 +63,8 @@
 		\textsf{On remarque bien que ce graphe est planaire, et est 4-coloriable.}
 	\end{center}
 \textsf{De manière générale, il est compliqué de résoudre le problème coloriable pour un graphe.}
-\textsf{Le problème coloriable est en effet NP-Complet, le temps de calcul est donc long pour un grand nombre de noeud.}
-\textsf{Dans le cas d'un graphe complet, on sait qu'il n-coloriable (n noeuds).}
+\textsf{Le problème coloriable est en effet NP-Complet, le temps de calcul est donc long pour un grand nombre de noeuds.}
+\textsf{Dans le cas d'un graphe complet, on sait qu'il est n-coloriable (n noeuds).}
 \textsf{Un graphe planaire est 4-coloriable (théorème des 4 couleurs).}\\\\
 \textit{Matrice d'adjacence du graphe : (on utilise l'ordre qui a été donné dans l'exercice)}
 	\begin{center}
@@ -137,12 +137,12 @@
 \textsf{Ainsi, on relie (00) à:}
 \begin{center}
 	$
-		\forall \alpha \in \{\{\beta \equiv 0 [9] : \beta \in [1,80] \}\cup \{\beta \in [1,8]\} \cup \{\beta \in \{11,19,20\}]\}\}
+		\forall \alpha \in \{\{\beta \equiv 0 [9] : \beta \in [1,80] \}\cup \{\beta \in [1,8]\} \cup \{\beta \in \{10,11,19,20\}]\}\}
 	$
 \end{center}
 \textsf{A chaque fois que l'on met un nombre $\delta$ dans une case, on l'enlève de :}\\
 \textsf{Son carré : 8 cases, sa ligne : 8 cases, sa colonne : 8 cases.}
-\textsf{On somme le tout, et on retranche 3 car 3 cases carré sont aussi comptées dans les lignes et colonnes.}
+\textsf{On somme le tout, et on retranche 4 car 4 cases du carré sont déjà comptées dans les lignes et colonnes.}
 \textsf{On remarque tout de suite, de part le nombre de cases du jeu Sudoku, que l'ordre du graphe est 81.}\\
 \textsf{La taille de ce graphe est quant à elle de 19.}
 \section*{Partie B -}
