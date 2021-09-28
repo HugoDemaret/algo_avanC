@@ -264,5 +264,119 @@ $\textit{min}(\sum_{}\big|M_{j}\big|) = \Bigg\{  \textit{si 1 : graphe non-simpl
 \textit{min}(\sum_{}\big|M_{j}\big|) = \Bigg\{  
 \textit{si 2 : graphe simple et connexe} \big. $
 \end{center}
-\textit{Nous dit si le graphe est simple et connexe, ou s'il contient une boucle.}\\\\
+\textit{Nous dit si le graphe est simple et connexe, ou s'il contient une boucle.}\\\\\\
+\textbf{4 -}
+\textit{Soit D la matrice diagonale de taille $n(G)\times n(G) $ dont le coefficient de la ligne correspondant au sommet u vaut le degré de u.}\\
+\textit{Démontrez que :}
+\begin{center}
+	$
+	M^t M = A + D
+	$
+\end{center}
+\textit{Soit G un graphe.}
+\begin{center}
+	$
+	\textsf{A est la matrice d'adjacence de G}
+	\linebreak
+	\textsf{M est la matrice d'incidence}
+	\linebreak
+	\textit{On a :}
+	\linebreak
+	A_{i,j} = \bigg\{ \textit{1 si i,j sont relié, 0 sinon}
+	\linebreak
+	M_{i,j} = \bigg\{ \textit{1 si l'arête i est reliée au sommet j, 0 sinon}
+	\linebreak
+	D_{i,j} = \bigg\{ \sum_{}{A_{i}}\textit{si i=j, 0 sinon}
+	\linebreak
+	\textit{D'où :}
+	\linebreak
+	dim(A)=dim(D) \quad \textit{(par définition de D)}
+	\linebreak
+	\textit{Et :}
+	\linebreak
+	dim(M^tM) = dim(A+D) \quad \textit{car les deux sont de taille i*j}
+	\textit{Avec :}
+	\linebreak
+	M^tM = \bigg\{ 
+	\linebreak
+	$
+\end{center}
+\textit{Cas du graphe G précédent :}
+\begin{center}
+	$
+	M =
+	\left[\begin{matrix}
+	1&1&0&0&0&0&0&0\\
+	1&0&1&0&1&0&0&0\\
+	0&0&0&0&1&1&0&1\\
+	0&0&1&1&0&0&1&1\\
+	0&1&0&1&0&0&0&0\\
+	0&0&0&0&0&1&1&0
+	\end{matrix}\right]
+	\linebreak
+	M^t =
+	\left[\begin{matrix}
+		1&1&0&0&0&0\\
+		1&0&0&0&1&0\\
+		0&1&0&1&0&0\\
+		0&0&0&1&1&0\\
+		0&1&1&0&0&0\\
+		0&0&1&0&0&1\\
+		0&0&0&1&0&1\\
+		0&0&1&1&0&0
+	\end{matrix}\right]
+	\linebreak
+	M^tM = 
+	\left[\begin{matrix}
+		2&1&0&0&1&0\\
+		1&3&1&1&0&0\\
+		0&1&3&1&0&1\\
+		0&1&1&4&1&1\\
+		1&0&0&1&2&0\\
+		0&0&1&1&0&2
+	\end{matrix}\right]
+	\linebreak
+	D =
+	\left[\begin{matrix}
+		2&0&0&0&0&0\\
+		0&3&0&0&0&0\\
+		0&0&3&0&0&0\\
+		0&0&0&4&0&0\\
+		0&0&0&0&2&0\\
+		0&0&0&0&0&2
+	\end{matrix}\right]
+	\linebreak
+	A + D =
+	\left[\begin{matrix}
+		2&1&0&0&1&0\\
+		1&3&1&1&0&0\\
+		0&1&3&1&0&1\\
+		0&1&1&4&1&1\\
+		1&0&0&1&2&0\\
+		0&0&1&1&0&2
+	\end{matrix}\right]
+	$
+\end{center}
+	\textit{On a donc bien }$ M^tM = A+D $\textit{ pour le graphe G.}\\\\
+	\textit{Dans un cas général, cela est vrai car :}
+\begin{center}
+	$
+	dim(M^tM) = dim(A) = dim(D)
+	$
+\end{center}
+	\textsf{En effet, M est de dimension n (sommets)} $\times$ \textsf{k (arêtes)}
+	\linebreak
+	\textsf{D'où, après multiplication par sa transposée, une matrice de taille n}$\times$\textsf{n.}
+	\linebreak
+	\textsf{Par produit matriciel, la diagonale prend donc la valeur du degré du sommet.}
+	\linebreak
+	\textsf{Enfin, les autres coefficients de la matrice se correspondent car on fait d'une part la somme des degrés, d'autre part on 'replace' les sommets, comme dans la matrice d'adjacence.}
+	\linebreak
+	\textsf{Donc,}
+	\linebreak
+\begin{center}
+	$
+	M^tM = A + D
+	$
+\end{center}
 \end{document}
