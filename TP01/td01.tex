@@ -26,7 +26,7 @@
 			\draw[](A)--(B)--(C)--(D)--(E)--(A)--(C)--(E)--(B)--(D)--(A);
 		\end{tikzpicture}
 	\end{center}
-	\textit{Notons l'arête reliant deux sommets i,j "$(i;j)$".2Remarquons que $(i;j) = (j;i)$.}\\
+	\textit{Notons l'arête reliant deux sommets i,j "$(i;j)$". Remarquons que $(i;j) = (j;i)$.}\\
 	\linebreak
 	\textsf{Comptons le nombre de paires grâce à la formule $\frac{n(n+1)}{2} $, avec $n = card(\{A,B,C,D,E\}) -1 = 4 $ car on ne forme pas de paire $(i;i)$}
 	\linebreak
@@ -152,41 +152,8 @@ Voir sur :\\
 	https://github.com/HugoDemaret/binary\_tree\\
 	\textit{Actuellement, seule l'implémentation de la LinkedList est faite.}
 
+
 \section*{Partie C -}
-\subsection*{Exercice 1 -}
-	\textbf{Déterminons quelle est la complexité asymptotique de cet algorithme.}\\\\
-\subsection*{Exercice 2 -}
-	\textit{Soit T un graphe avec n sommets. Démontrer que les propriétés suivantes sont équivalentes.}\\\\
-	\textbf{(1) T est un arbre}\\
-	\textit{La définition d'un arbre est : Graphe acyclique et connexe.}\\\\
-	\textbf{(2) T est un graphe connexe et acyclique}\\
-	\textit{C'est en fait l'une des définitions d'un arbre.}\\\\
-	\textbf{(3) T est un graphe connexe avec n-1 arête}\\
-	\textit{Un graphe cyclique à n sommets possède au minimum n arêtes. Donc un graphe connexe à n-1 		arêtes est acyclique. C'est un arbre.}\\\\
-	\textbf{(4) T est un graphe acyclique avec n-1 arête}\\
-	\textit{T est un graphe simple. Un graphe acyclique est un graphe simple (la boucle serait un cycle). Le graphe possède n-1 arêtes, donc chaque sommet possède au moins une arête (parfois en commun avec un autre sommet). Donc le graphe est connexe. C'est donc un arbre.}\\\\
-\textit{Les propriétés précédentes décrivant toutes un arbre, elles sont équivalentes.}\\\\
-\subsection*{Exercice 3 -}
-\textit{Considérons 3 définitions d'un arbre : }\\\\\\
-
-\textit{Définition 1.}\\
-\textsf{Un arbre T est un graphe :}\\
-\textsf{• Qui est simple (sans boucle)}\\
-\textsf{• Tel que : }\\
-\begin{equation}
-\forall (u,v) \in T, u \neq v, \exists! \eta[u,v]
-\end{equation}\\
-\textsf{Cette définition repose sur les deux propositions suivantes :}\\
-\textit{Proposition 1 : S'il y a un chemin de v à w dans le graphe G, alors il y a aussi un chemin simple de v à w.}\\
-\textit{Proposition 2 : S'il y a un cycle dans G, alors il y a un cycle simple dans G.}\\\\\\
-
-\textit{Définition 2.}\\
-\textsf{Un graphe non-orienté connexe et acyclique est appelé un arbre.}\\\\\\
-
-\textit{Définition 3.}\\
-\textsf{Un arbre est un graphe connexe minimal. C'est-à-dire que toute suppression d'arêtes le rend non connexe.}\\\\\\
-
-\section*{Partie D -}
 \subsection*{Exercice 1.1 -}
 \textit{Soit G le graphe suivant :}\\\\\\
 \begin{center}
