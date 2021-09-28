@@ -5,6 +5,7 @@
 \usepackage{tikz}
 \usepackage{amsmath}
 \usetikzlibrary{automata}
+\setcounter{MaxMatrixCols}{25}
 
 \title{Algorithmique Avancée TD01}
 \author{Hugo Demaret}
@@ -24,13 +25,84 @@
 			\draw[](A)--(B)--(C)--(D)--(E)--(A)--(C)--(E)--(B)--(D)--(A);
 		\end{tikzpicture}
 	\end{center}
-	\textit{Notons l'arrête reliant deux sommets i,j "$(i;j)$". Remarquons que $(i;j) = (j;i)$.}\\
+	\textit{Notons l'arête reliant deux sommets i,j "$(i;j)$".2Remarquons que $(i;j) = (j;i)$.}\\
 	\linebreak
 	\textsf{Comptons le nombre de paires grâce à la formule $\frac{n(n+1)}{2} $, avec $n = card(\{A,B,C,D,E\}) -1 = 4 $ car on ne forme pas de paire $(i;i)$}
 	\linebreak
 	\textsf{Cela donne $ 10$ paires}
 	\textsf{Donc le nombre total (minimal) de personnes est 10, à répartir entre chaque groupe équitablement.}\\
 	\textsf{Le nombre de personnes par groupe est donc 2.}
+\subsection*{Exercice 2 -}
+\textit{Représentons ce problème sous forme de graphe. La question que l'on se pose est "Ce graphe est-t-il k-coloriable, pour quelle valeur de k ?"}\\\\
+\linebreak
+\textsf{Les sommets représenterons les pays, et la relation entre deux sommet (lien) est une frontière commune.}
+\textsf{On peut en vérité déjà savoir que le graphe sera 4-coloriable. En effet, tout graphe planaire (pouvant se représenter sur un plan sans que les arêtes ne se croisent), est 4-coloriable d'après le théorème des 4 couleurs.}\\
+\linebreak
+\textit{Voici un tracé possible de ce graphe :}
+	\begin{center}
+		\begin{tikzpicture}
+			\node[circle,draw=red] (fr) at (-2,0) {France};
+			\node[circle,draw=red] (po) at (-6,-4) {Portugal};
+			\node[circle,draw=red] (pb) at (1,6) {Pays-Bas};
+			\node[circle,draw=red] (au) at (6,-1) {Autriche};
+			\node[circle,draw=green] (es) at (-4,-4) {Espagne};
+			\node[circle,draw=green] (it) at (2,-4) {Italie};
+			\node[circle,draw=green] (lu) at (-1.5,2) {Luxembourg};
+			\node[circle,draw=blue] (be) at (-6,2) {Belgique};
+			\node[circle,draw=blue] (su) at (3,-2) {Suisse};
+			\node[circle,draw=orange] (al) at (6,6) {Allemagne};
+			\node[circle,draw=orange] (an) at (-1.5,-2) {Andorre};
+			\draw[](po)--(es)--(an)--(fr)--(lu)--(al)--(au)--(su)--(it)--(fr)--(be)--(pb);
+			\draw[](es)--(fr)--(su)--(al)--(pb);
+			\draw[](al)--(be);
+			\draw[](fr)--(al);
+			\draw[](au)--(it); 
+			\draw[](lu)--(be);
+		\end{tikzpicture}
+		\textsf{On remarque bien que ce graphe est planaire, et est 4-coloriable.}
+	\end{center}
+\textsf{De manière générale, il est compliqué de résoudre le problème coloriable pour un graphe.}
+\textsf{Le problème coloriable est en effet NP-Complet, le temps de calcul est donc long pour un grand nombre de noeud.}
+\textsf{Dans le cas d'un graphe complet, on sait qu'il n-coloriable (n noeuds).}
+\textsf{Un graphe planaire est 4-coloriable (théorème des 4 couleurs).}
+\textit{Matrice d'adjacence du graphe : (on utilise l'ordre qui a été donné dans l'exercice)}
+	\begin{center}
+	$
+	\begin{matrix}
+		X & Fr & Es & Po & An & It & Au & Su & Al & Lu & Be & Pb\\
+		Fr&0&1&0&1&1&0&1&1&1&1&0\\
+		Es&1&0&1&1&0&0&0&0&0&0&0\\
+		Po&0&1&0&0&0&0&0&0&0&0&0\\
+		An&1&1&0&0&0&0&0&0&0&0&0\\
+		It&1&0&0&0&0&1&1&0&0&0&0\\
+		Au&0&0&0&0&1&0&1&1&0&0&0\\
+		Su&1&0&0&0&1&1&0&1&0&0&0\\
+		Al&1&0&0&0&0&1&1&0&1&1&1\\
+		Lu&1&0&0&0&0&0&0&1&0&1&0\\
+		Be&1&0&0&0&0&0&0&1&1&0&1\\
+		Pb&0&0&0&0&0&0&0&1&0&1&0
+	\end{matrix}
+	$
+\end{center}
+	\textit{D'ou la matrice d'adjacence A suivante :}
+\begin{center}
+	$
+	A = 
+	\left[\begin{matrix}
+		0&1&0&1&1&0&1&1&1&1&0\\
+		1&0&1&1&0&0&0&0&0&0&0\\
+		0&1&0&0&0&0&0&0&0&0&0\\
+		1&1&0&0&0&0&0&0&0&0&0\\
+		1&0&0&0&0&1&1&0&0&0&0\\
+		0&0&0&0&1&0&1&1&0&0&0\\
+		1&0&0&0&1&1&0&1&0&0&0\\
+		1&0&0&0&0&1&1&0&1&1&1\\
+		1&0&0&0&0&0&0&1&0&1&0\\
+		1&0&0&0&0&0&0&1&1&0&1\\
+		0&0&0&0&0&0&0&1&0&1&0
+	\end{matrix}\right]
+	$
+	\end{center}
 \section*{Partie B -}
 Voir sur :\\
 	https://github.com/HugoDemaret/linked\_list\\
@@ -46,10 +118,10 @@ Voir sur :\\
 	\textit{La définition d'un arbre est : Graphe acyclique et connexe.}\\\\
 	\textbf{(2) T est un graphe connexe et acyclique}\\
 	\textit{C'est en fait l'une des définitions d'un arbre.}\\\\
-	\textbf{(3) T est un graphe connexe avec n-1 arrête}\\
-	\textit{Un graphe cyclique à n sommets possède au minimum n arrêtes. Donc un graphe connexe à n-1 		arrêtes est acyclique. C'est un arbre.}\\\\
-	\textbf{(4) T est un graphe acyclique avec n-1 arrête}\\
-	\textit{T est un graphe simple. Un graphe acyclique est un graphe simple (la boucle serait un cycle). Le graphe possède n-1 arrêtes, donc chaque sommet possède au moins une arrête (parfois en commun avec un autre sommet). Donc le graphe est connexe. C'est donc un arbre.}\\\\
+	\textbf{(3) T est un graphe connexe avec n-1 arête}\\
+	\textit{Un graphe cyclique à n sommets possède au minimum n arêtes. Donc un graphe connexe à n-1 		arêtes est acyclique. C'est un arbre.}\\\\
+	\textbf{(4) T est un graphe acyclique avec n-1 arête}\\
+	\textit{T est un graphe simple. Un graphe acyclique est un graphe simple (la boucle serait un cycle). Le graphe possède n-1 arêtes, donc chaque sommet possède au moins une arête (parfois en commun avec un autre sommet). Donc le graphe est connexe. C'est donc un arbre.}\\\\
 \textit{Les propriétés précédentes décrivant toutes un arbre, elles sont équivalentes.}\\\\
 \subsection*{Exercice 3 -}
 \textit{Considérons 3 définitions d'un arbre : }\\\\\\
@@ -69,7 +141,7 @@ Voir sur :\\
 \textsf{Un graphe non-orienté connexe et acyclique est appelé un arbre.}\\\\\\
 
 \textit{Définition 3.}\\
-\textsf{Un arbre est un graphe connexe minimal. C'est-à-dire que toute suppression d'arrêtes le rend non connexe.}\\\\\\
+\textsf{Un arbre est un graphe connexe minimal. C'est-à-dire que toute suppression d'arêtes le rend non connexe.}\\\\\\
 
 \section*{Partie D -}
 \subsection*{Exercice 1.1 -}
@@ -114,12 +186,12 @@ Voir sur :\\
 	\end{matrix}\right]
 	$
 	\end{center}
-	\textit{Codage en liste d'arrêtes et sommets :}
+	\textit{Codage en liste d'arêtes et sommets :}
 	\begin{table}[h]
 		\begin{center}
 		\begin{tabular}{|c | c | c | p{5cm}}
 		\hline
-		Sommet & arrêtes & sommets\\
+		Sommet & arêtes & sommets\\
 		\hline \hline
 		1&a,b&2,5\\
 		2&a,c,e&1,3,4\\
@@ -137,7 +209,7 @@ Voir sur :\\
 \textit{Soit A la matrice d'adjacence de G. Que valent les sommes par lignes et par colonnes ?}\\\\
 \textsf{Les sommes par lignes et par colonnes nous donnent le degré des sommets de G.}\\\\
 \textbf{2 -}
-\textit{Soit M la matrice d’incidence de G, c’est-à-dire une matrice de taille $\big|V(G)\big| \cdot \big|E(G)\big|$ telle que $m_{ue} = 1$ si l’arrête e est incidente au sommet u et $m_{ue} = 0$ sinon. Ecrire la matrice d’incidence du graphe de l’exercice précédent.}\\\\
+\textit{Soit M la matrice d’incidence de G, c’est-à-dire une matrice de taille $\big|V(G)\big| \cdot \big|E(G)\big|$ telle que $m_{ue} = 1$ si l’arête e est incidente au sommet u et $m_{ue} = 0$ sinon. Ecrire la matrice d’incidence du graphe de l’exercice précédent.}\\\\
 \textit{Matrice d'incidence de G :}\\\\
 \begin{center}
 	$
@@ -172,7 +244,7 @@ $\sum_{}\big|M_{j}\big| = \Bigg\{  \textit{si 1 : boucle (non-simple)}
 \textit{- pas d'information sur la connexité}
 \linebreak
 \sum_{}\big|M_{j}\big| = \Bigg\{  
-\textit{si 2 : arrête simple et connexe} \big. $
+\textit{si 2 : arête simple et connexe} \big. $
 \end{center}
 \textit{Nous dit si le sommet est simple, et s'il est connecté au reste du graphe.}\\\\
 \textit{Min() somme par colonnes :}\\\\
