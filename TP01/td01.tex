@@ -375,4 +375,32 @@ $\textit{min}(\sum_{}\big|M_{j}\big|) = \Bigg\{  \textit{si 1 : graphe non-simpl
 	M^tM = A + D
 	$
 \end{center}
+\textit{Autre démonstration :}
+\begin{center}
+	$
+	(M^tM)_{uv} = \sum_{i \in G} M_{ui}^tM_{iv}
+	\linebreak
+	(M^tM)_{uv}	= \sum_{i \in G} M_{ui}M_{vi}
+	\linebreak
+	\textit{Si } u \neq v,
+	\quad
+	M_{ui}M_{vi} = 1
+	\linebreak
+	Donc :
+	\linebreak
+	\sum_{i \in G} M_{ui}M_{vi} = \bigg\{ \textit{1 si l'arête existe, 0 sinon}
+	\linebreak
+	\sum_{i \in G} M_{ui}M_{vi} = A_{uv}
+	\linebreak
+	\textit{Si } u = v,
+	\quad
+	M_{ui}M_{vi} = 1
+	\linebreak
+	\sum_{i \in G} M_{ui}M_{vi} = D_{uv}
+	\linebreak
+	\textit{D'où}
+	\linebreak
+	M^tM = A+D
+	$
+\end{center}
 \end{document}
