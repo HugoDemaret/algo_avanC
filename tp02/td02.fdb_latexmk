@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633114486 "/Users/hugodemaret/cours/algo_avanC/tp02/td02.tex" "/Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf" "td02" 1633114561
-  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.aux" 1633114487 32 044b7f8fc9779af7531264e0c5c84b6d ""
-  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.tex" 1633114558 4800 a3af949af79d5885ba33d5cf1131d3e4 ""
+["pdflatex"] 1633114941 "/Users/hugodemaret/cours/algo_avanC/tp02/td02.tex" "/Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf" "td02" 1633114942
+  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.aux" 1633114942 32 044b7f8fc9779af7531264e0c5c84b6d ""
+  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.tex" 1633114941 4800 4954a2217328b4f6061779be5fc36994 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -21,7 +21,6 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
-  "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss8.tfm" 1136768653 1296 d77f431d10d47c8ea2cc18cf45346274 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -137,11 +136,11 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632726562 2724744 a0e17deef1717f5cc42e98e4914400c9 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "td02.aux" 1633114487 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "td02.tex" 1633114558 4800 a3af949af79d5885ba33d5cf1131d3e4 ""
+  "td02.aux" 1633114942 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "td02.tex" 1633114941 4800 4954a2217328b4f6061779be5fc36994 ""
   (generated)
-  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf"
-  "td02.pdf"
-  "td02.log"
-  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.log"
   "td02.aux"
+  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf"
+  "/Users/hugodemaret/cours/algo_avanC/tp02/td02.log"
+  "td02.log"
+  "td02.pdf"
