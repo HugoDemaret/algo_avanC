@@ -58,27 +58,67 @@
 \section*{Exercice 1.5 -}
 \textit{Le but de cet exercice est de montrer que deux plus longs chemins dans un graphe\\ non-orienté connexe G ont forcément un sommet commun.}
     \subsection*{1 -}
-            \textit{Si les deux chemins ont la même longueur :}
+            \subsubsection*{Démonstration 1 :}
+            \textrm{Si les deux chemins ont la même longueur :}
             \linebreak
-            \textit{- Soit ils partent du même sommet (ou arrivent au même) et sont joints.}
+            \textrm{- Soit ils partent du même sommet (ou arrivent au même) et sont joints.}
             \linebreak
-            \textit{- Soit ils ne partent pas du même sommet (et n'arrivent pas au même sommet).}
+            \textrm{- Soit ils ne partent pas du même sommet (et n'arrivent pas au même sommet).}
             \linebreak
-            \textit{On peut donc couper le graphe en deux sous graphes}
+            \textrm{On peut donc couper le graphe en deux sous graphes}
             \linebreak
-            \textit{Pour chacun de ces deux sous graphes, on ne considère que les chemins.}
+            \textrm{Pour chacun de ces deux sous graphes, on ne considère que les chemins.}
             \linebreak
-            \textit{Ces sous graphes sont alors homéomorphe à un segment.}
+            \textrm{Ces sous graphes sont alors homéomorphe à un segment.}
             \linebreak
-            \textit{La distance étant égale, on peut tracer deux cordes}
+            \textrm{La distance étant égale, on peut tracer deux cordes}
             \linebreak
-            \textit{(les deux chemins) sur un cercle de rayon k, avec k étant le nombre de sommets}
+            \textrm{(les deux chemins) sur un cercle de rayon k, avec k étant le nombre de sommets}
             \linebreak
-            \textit{Ces deux cordes sont en fait des rayons, car de longueur k.}
+            \textrm{Ces deux cordes sont en fait des rayons, car de longueur k.}
             \linebreak
-            \textit{Deux rayons d'un cercle s'intersectent toujours.}
+            \textrm{Deux rayons d'un cercle s'intersectent toujours.}
             \linebreak
-            \textit{Donc les deux chemins se croisent. Absurde.}
+            \textrm{Donc les deux chemins se croisent. Absurde.}
+        \subsubsection*{Démonstration 2 :}
+            \textit{On essaie de représenter ce à quoi pourrait ressembler un tel graphe.}
+            \textit{On montrera ensuite pourquoi un tel graphe, s'il existe, contedit les prémices de notre raisonnement.}\\\\
+            \textrm{On suppose qu'il existe un graphe G simple et connexe, tel qu'il existe (au moins) deux chemins $\lambda$ et $\delta$ avec :}
+            $
+            \lambda \cap \delta = \varnothing
+            $
+            \textrm{Voici un schéma représentant ce graphe :}
+            \begin{center}
+                \begin{tikzpicture}
+                    \node[circle,draw=red](A) at (0,0){A};
+                    \node[circle,draw=red](B) at (4,0){B};
+                    \node[circle,draw=red](C) at (0,-2){C};
+                    \node[circle,draw=red](D) at (4,-2){D};
+                    \draw[](A)--(B);
+                    \draw[](C)--(D);
+                \end{tikzpicture}
+            \end{center}
+            \textrm{Ces deux chemins $(A,B)$ et $(C,D)$ sont de taille égale.}\\
+            \textrm{Le graphe étant connexe, il existe un chemin $(\omega,\sigma)$ les reliants.}\\
+            \textrm{Représentation :}
+            \begin{center}
+                \begin{tikzpicture}
+                    \node[circle,draw=red](A) at (0,0){A};
+                    \node[circle,draw=red](B) at (4,0){B};
+                    \node[circle,draw=green](C) at (0,-2){C};
+                    \node[circle,draw=green](D) at (4,-2){D};
+                    \draw[](A)--(B);
+                    \draw[](C)--(D);
+                    \node[circle,draw=black](E) at (2,0){};
+                    \node[circle,draw=black](F) at (2.5,-2){};
+                    \draw[](E)--(F);
+                \end{tikzpicture}
+            \end{center}
+            \textrm{On remarque qu'en passant par ce nouveau chemin, la distance parcouru est plus grande.}\\
+            \textrm{Ces deux chemins les plus grands ne sont donc pas les plus grands. Absurde.}\\
+            \textrm{Ou alors, le graphe n'est pas connexe. Absurde.}\\\\
+            \textrm{Donc, deux plus longs chemins dans un graphe G ne sont pas disjoints.}
+            $\square $
     \subsection*{2 -}
         \textsf{Étant donné que les deux chemins se croisent (car non-disjoints), il existe au moins un sommet en commun.}
     \subsection*{3 -}

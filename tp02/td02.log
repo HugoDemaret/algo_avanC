@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.27)  1 OCT 2021 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.27)  1 OCT 2021 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,49 +418,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 Si les deux chemins ont la m^eme longueur :
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 Si les deux chemins ont la m^eme longueur :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 On peut donc couper le graphe en deux sous graphes
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 On peut donc couper le graphe en deux sous graphes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 Ces sous graphes sont alors hom^^Seomorphe ^^Ra un seg-ment.
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 Ces sous graphes sont alors hom^^Seomorphe ^^Ra un seg-ment.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 La dis-tance ^^Setant ^^Segale, on peut tracer deux cordes
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 La dis-tance ^^Setant ^^Segale, on peut tracer deux cordes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 Ces deux cordes sont en fait des rayons, car de longueur k.
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 Ces deux cordes sont en fait des rayons, car de longueur k.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--82
-\OT1/cmr/m/it/10 Deux rayons d'un cer-cle s'intersectent tou-jours.
+Underfull \hbox (badness 10000) in paragraph at lines 62--83
+\OT1/cmr/m/n/10 Deux rayons d'un cer-cle s'intersectent tou-jours.
  []
 
-[2] (/Users/hugodemaret/cours/algo_avanC/tp02/td02.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--91
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 117--122
+
+ []
+
+[3] (/Users/hugodemaret/cours/algo_avanC/tp02/td02.aux) ) 
 Here is how much of TeX's memory you used:
- 13996 strings out of 478994
- 284597 string characters out of 5858184
- 558826 words of memory out of 5000000
- 31234 multiletter control sequences out of 15000+600000
- 412334 words of font info for 61 fonts, out of 8000000 for 9000
+ 14003 strings out of 478994
+ 284705 string characters out of 5858184
+ 559826 words of memory out of 5000000
+ 31240 multiletter control sequences out of 15000+600000
+ 412642 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,6n,116p,446b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on /Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf (2 pages, 120357 bytes).
+ 113i,6n,116p,446b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/hugodemaret/cours/algo_avanC/tp02/td02.pdf (3 pages, 146974 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
