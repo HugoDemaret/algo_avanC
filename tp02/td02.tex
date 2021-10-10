@@ -20,13 +20,11 @@
 \textsf{Le graphe possède n sommet, et k arêtes.}\\
 \textsf{On procède par récurrence :}
     \begin{center}
-        $
-            \textrm{On utilise le lemme des tiroirs :}
+            On utilise le lemme des tiroirs :
             \linebreak
-            \textrm{On a n sommet, et au plus n-1 étiquette.}
+            On a n sommet, et au plus n-1 étiquette.
             \linebreak
-            \textrm{Par principe des tiroirs, au moins deux sommets on la même etiquette.}
-        $
+            Par principe des tiroirs, au moins deux sommets on la même etiquette.
     \end{center}
 \section*{Exercice 1.4 -}
     \textit{Soit $(d_{1},...,d_{n})$ la suite des degrés d'un graphe non-dirigé G.}\\
@@ -46,7 +44,7 @@
             \textit{En déduire que $\delta(G) \leq \frac{2m(G)}{n(G)} \leq \bigtriangleup(G)$}\\
             \begin{center}
             $
-            \forall i \in \{1,...,n\} \delta(G) \leq d_{i} \leq \bigtriangleup(G)
+            \forall i \in \{1,...,n\}, \delta(G) \leq d_{i} \leq \bigtriangleup(G)
             \linebreak
             \Rightarrow \sum_{i=1}^{n} \delta(G) \leq \sum_{i=1}^{n} d_{i} \leq \sum_{i=1}^{n} \bigtriangleup(G)
             \linebreak
@@ -59,35 +57,36 @@
 \textit{Le but de cet exercice est de montrer que deux plus longs chemins dans un graphe\\ non-orienté connexe G ont forcément un sommet commun.}
     \subsection*{1 -}
             \subsubsection*{Démonstration 1 :}
-            \textrm{Si les deux chemins ont la même longueur :}
+            Si les deux chemins ont la même longueur :
             \linebreak
-            \textrm{- Soit ils partent du même sommet (ou arrivent au même) et sont joints.}
+            - Soit ils partent du même sommet (ou arrivent au même) et sont joints.
             \linebreak
-            \textrm{- Soit ils ne partent pas du même sommet (et n'arrivent pas au même sommet).}
+            - Soit ils ne partent pas du même sommet (et n'arrivent pas au même sommet).
             \linebreak
-            \textrm{On peut donc couper le graphe en deux sous graphes}
+            On peut donc couper le graphe en deux sous graphes
             \linebreak
-            \textrm{Pour chacun de ces deux sous graphes, on ne considère que les chemins.}
+            Pour chacun de ces deux sous graphes, on ne considère que les chemins.
             \linebreak
-            \textrm{Ces sous graphes sont alors homéomorphe à un segment.}
+            Ces sous graphes sont alors homéomorphe à un segment.
             \linebreak
-            \textrm{La distance étant égale, on peut tracer deux cordes}
+            La distance étant égale, on peut tracer deux cordes
             \linebreak
-            \textrm{(les deux chemins) sur un cercle de rayon k, avec k étant le nombre de sommets}
+            (les deux chemins) sur un cercle de rayon k, avec k étant le nombre de sommets
             \linebreak
-            \textrm{Ces deux cordes sont en fait des rayons, car de longueur k.}
+            Ces deux cordes sont en fait des rayons, car de longueur k.
             \linebreak
-            \textrm{Deux rayons d'un cercle s'intersectent toujours.}
+            Deux rayons d'un cercle s'intersectent toujours.
             \linebreak
-            \textrm{Donc les deux chemins se croisent. Absurde.}
+            Donc les deux chemins se croisent. Absurde.
         \subsubsection*{Démonstration 2 :}
             \textit{On essaie de représenter ce à quoi pourrait ressembler un tel graphe.}
-            \textit{On montrera ensuite pourquoi un tel graphe, s'il existe, contedit les prémices de notre raisonnement.}\\\\
-            \textrm{On suppose qu'il existe un graphe G simple et connexe, tel qu'il existe (au moins) deux chemins $\lambda$ et $\delta$ avec :}
+            \textit{On montrera ensuite pourquoi un tel graphe, s'il existe, contedit les prémices de notre raisonnement.}
+            \linebreak
+            On suppose qu'il existe un graphe G simple et connexe, tel qu'il existe (au moins) deux chemins $\lambda$ et $\delta$ avec :
             $
             \lambda \cap \delta = \varnothing
             $
-            \textrm{Voici un schéma représentant ce graphe :}
+            Voici un schéma représentant ce graphe :
             \begin{center}
                 \begin{tikzpicture}
                     \node[circle,draw=red](A) at (0,0){A};
@@ -98,9 +97,9 @@
                     \draw[](C)--(D);
                 \end{tikzpicture}
             \end{center}
-            \textrm{Ces deux chemins $(A,B)$ et $(C,D)$ sont de taille égale.}\\
-            \textrm{Le graphe étant connexe, il existe un chemin $(\omega,\sigma)$ les reliants.}\\
-            \textrm{Représentation :}
+            Ces deux chemins $(A,B)$ et $(C,D)$ sont de taille égale.
+            Le graphe étant connexe, il existe un chemin $(\omega,\sigma)$ les reliants.
+            Représentation :
             \begin{center}
                 \begin{tikzpicture}
                     \node[circle,draw=red](A) at (0,0){A};
@@ -114,16 +113,16 @@
                     \draw[](E)--(F);
                 \end{tikzpicture}
             \end{center}
-            \textrm{On remarque qu'en passant par ce nouveau chemin, la distance parcouru est plus grande.}\\
-            \textrm{Ces deux chemins les plus grands ne sont donc pas les plus grands. Absurde.}\\
-            \textrm{Ou alors, le graphe n'est pas connexe. Absurde.}\\\\
-            \textrm{Donc deux plus longs chemins dans un graphe G ne sont pas disjoints.}
+            On remarque qu'en passant par ce nouveau chemin, la distance parcouru est plus grande.
+            Ces deux chemins les plus grands ne sont donc pas les plus grands. Absurde.
+            Ou alors, le graphe n'est pas connexe. Absurde.
+            Donc deux plus longs chemins dans un graphe G ne sont pas disjoints.
             $\square $
     \subsection*{2 -}
-        \textrm{Étant donné que les deux chemins se croisent (car non-disjoints), il existe au moins un sommet en commun.}
+        Étant donné que les deux chemins se croisent (car non-disjoints), il existe au moins un sommet en commun.
     \subsection*{3 -}
-        \textrm{Dans le cas d'un graphe non-connexe nom : graphe composé de deux fois un même sous graphe.}
-        \textrm{Dans le cas d'un graphe orienté faiblement connexe, cette propriété est fausse :}
+        Dans le cas d'un graphe non-connexe non : graphe composé de deux fois un même sous graphe.
+        Dans le cas d'un graphe orienté faiblement connexe, cette propriété est fausse :
         \begin{center}
             \begin{tikzpicture}
                 \node[circle,draw=black](A) at(0,0) {A};
@@ -143,4 +142,38 @@
                 \draw[->](A)--(E);
             \end{tikzpicture}
         \end{center}
+    \section*{Exercice 1.6 -}
+        Un graphe non-orienté est dit \textit{biparti} si $V(G)$ peut être partitionné en deux ensembles $A$ et $B$
+        tels que toute arête de $G$ relie un sommet de $A$ et un sommet de $B$. On note $n(A)$ et $n(B)$ le nombre de sommets de $A$ et $B$.
+        \subsection*{1 -}
+            Le nombre maximal d'arêtes est donné de la façon suivante $n(A) \times n(B)$.
+            La densité peut être définie comme suit :
+            $$
+            \frac{m(G)}{n(A)\times n(B)}
+            $$
+            \textit{Avec m(G) le nombre d'arêtes du graphe}
+        \subsection*{2 -}
+            Les sommets de $A$ alternent avec les sommets de $B$, et le dernier sommet est relié au premier, et par conséquent :
+            
+            \textit{Premier sommet noté s, dernier sommet noté d}
+            $$
+            \textit{si } s \in A, p \in B 
+            $$
+            Et réciproquement.\\
+            Le nombre de sommet est donc forcément pair.
+        \subsection*{3 -}
+    \section*{Exercice 1.7 -}
+        \subsection*{1 -}
+            Démonstration par récurrence :\\
+            Soit $P_{k}$ la propriété est vrai au rang $k$\\
+            $k=1$ est vraie (marche de longueur 1, donc présence de l'arête)\\
+            Supposons la propriété vraie au rang k, k fixé. Montrons que cela entraine k+1.\\
+            $$
+                \left(M^{k+1}\right)_{u,v} = \sum_{w \in V(G)} \left(M^{k}\right)_{u,w} M_{w,v}
+                = \sum_{w \textit{ voisin de }v} \left(M^{k}\right)_{u,w}
+            $$
+            Pour toute marche entre $u$ et $v$ de longueur $k+1$, il y a une marche de longueur $k$ entre $u$ et un voisin $w$ (réciproquement)\\
+            La propriété est vraie au rang $1$ et $P(k) \Rightarrow P(k+1)$\\
+            Donc la propriété est vraie par récurrence.
+        \subsection{2 -}
 \end{document}
