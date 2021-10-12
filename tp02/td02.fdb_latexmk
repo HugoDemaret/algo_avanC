@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633891277 "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.tex" "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.pdf" "td02" 1633891278
-  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.aux" 1633891278 128 9651762d2eeb6450d0452700400d9d77 ""
-  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.tex" 1633891277 8683 3cdb856b98cd99bf2357c291508f6543 ""
+["pdflatex"] 1634067770 "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.tex" "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.pdf" "td02" 1634067788
+  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.aux" 1634067771 32 2d1df76398b3c48c6419a45a7331db2d ""
+  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.tex" 1634067788 10798 21daad7c47ac015e05cb0796dd066039 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1617738065 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1617738065 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -38,9 +38,9 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1617738065 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1617738065 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1617738065 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1617738065 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1617738065 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1617738065 37944 359e864bd06cde3b1cf57bb20757fb06 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1617738065 36607 d654cb3f2bc54f57509240071db3bffa ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1617738065 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1617738065 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1617738065 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -141,11 +141,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1632345408 5042380 6ec816022ceece3975a2c627992d6a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1632345160 2812675 230587f9fcd82af5d50ab9b15501df39 ""
-  "td02.aux" 1633891278 128 9651762d2eeb6450d0452700400d9d77 "pdflatex"
-  "td02.tex" 1633891277 8683 3cdb856b98cd99bf2357c291508f6543 ""
+  "td02.aux" 1634067771 32 2d1df76398b3c48c6419a45a7331db2d "pdflatex"
+  "td02.tex" 1634067788 10798 21daad7c47ac015e05cb0796dd066039 ""
   (generated)
   "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.log"
+  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.pdf"
   "td02.log"
   "td02.pdf"
   "td02.aux"
-  "/home/hugodemaret/projects/cours/algo_avanC/tp02/td02.pdf"

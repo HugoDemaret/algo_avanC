@@ -162,6 +162,9 @@
             Et réciproquement.\\
             Le nombre de sommet est donc forcément pair.
         \subsection*{3 -}
+        On raisonne par l'absurde.
+        Soient $p=2k$ et $g=2k+1$
+        Alors pour le chemin $p$ $(u,v)$ appartient
     \section*{Exercice 1.7 -}
         \subsection*{1 -}
             Démonstration par récurrence :\\
@@ -170,10 +173,43 @@
             Supposons la propriété vraie au rang k, k fixé. Montrons que cela entraine k+1.\\
             $$
                 \left(M^{k+1}\right)_{u,v} = \sum_{w \in V(G)} \left(M^{k}\right)_{u,w} M_{w,v}
-                = \sum_{w \textit{ voisin de }v} \left(M^{k}\right)_{u,w}
+                = \sum_{w} \left(M^{k}\right)_{u,w}
             $$
+            Avec $w$ qui est aussi un voisin de $v$\\\\
             Pour toute marche entre $u$ et $v$ de longueur $k+1$, il y a une marche de longueur $k$ entre $u$ et un voisin $w$ (réciproquement)\\
             La propriété est vraie au rang $1$ et $P(k) \Rightarrow P(k+1)$\\
-            Donc la propriété est vraie par récurrence.
-        \subsection{2 -}
+            Donc la propriété est vraie par récurrence.\\\\
+            \textit{En fait, on a une bijection entre les marches de longueur $k+1$ entre $(u,v)$\\ et les chemins de longueur $k$
+            entre $(u,N(v))$}
+            $\square$
+        \subsection*{2 -}
+            $M$ et $I$ sont commutantes (matrice identité)
+            D'où :
+            \begin{align*}
+            \left(I+M\right)^{k} &= \sum_{k'=0}^{k} \binom{k}{k'}M^{k'}I^{k-k'}\\
+            &= \sum_{k'=0}^{k} \binom{k}{k'}M^{k'}\\
+            \end{align*}
+            Tous les coefficients de cette somme sont positifs donc :
+            $\left( \left(I+M\right)^{k} \right)_{u,v} > 0$
+            ssi l'un des $M^{k'}$ est positif. $\square$
+        \subsection*{3 -}
+            S'il existe une marche entre $u$ et $v$ :
+            On appelle cette marche P.
+            Pour que P soit un chemin, P doit être la marche la plus courte (sans redondance).
+            S'il y a une redondance ($i.e$ on passe au moins deux fois par le même sommet)
+            alors ce n'est plus le plus court chemin. Il suffit donc de passer une seule fois par se sommet
+            pour avoir un chemin.
+            Donc s'il existe une marche entre $u$ et $v$, il existe un chemin $(u,v)$
+            $\square$
+        \subsection*{4 -}
+            G est connexe d'où :\\
+            G connexe $\Leftrightarrow \forall (u,v),$ il y a une marche $(u,v)$\\
+            G connexe $\Leftrightarrow \forall (u,v),$ il y a un chemin $(u,v)$\\
+            G connexe $\Leftrightarrow \forall (u,v), \exists k' \le k$ tel que $\left(M^{k'}\right)_{u,v}>0$\\
+            G connexe $\Leftrightarrow \forall (u,v), \left( \left(I+M\right)^{k} \right)_{u,v} > 0$
+            $\square$
+        \subsection*{5 -}
+            La complexité asymptotique du produit de deux matrices est $\mathcal{O}(n^{2})$
+            Il faut faire ce produit $n$ fois. La complexité est donc $\mathcal{O}(n^{3})$\\
+            Ce n'est pas très efficace, on préférera donc utiliser $BFS$ ou $DFS$.
 \end{document}
